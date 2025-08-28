@@ -1,0 +1,146 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.form__wrapper {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1px;
+  background-color: #d1d1d1;
+  border: 1px solid #d1d1d1;
+}
+
+.cell {
+  display: flex;
+  padding: 16px 12px;
+  background-color: #fff;
+}
+
+.cell input {
+  font-weight: 600;
+}
+.cell textarea {
+  font-weight: 500;
+}
+
+.head {
+  background-color: #e7e7e7;
+}
+
+.date {
+  grid-column: span 2 / span 2;
+}
+
+.shift {
+  grid-column-start: 3;
+}
+
+.user {
+  grid-column: span 5 / span 5;
+  grid-column-start: 4;
+}
+
+.user__wrapper {
+  display: flex;
+  gap: 12px;
+}
+
+.user__name {
+  flex: 5;
+}
+
+.user__description {
+  flex: 1;
+  color: #4f4f4f;
+  max-width: fit-content;
+}
+
+.jobCode {
+  grid-column: span 2 / span 2;
+  grid-column-start: 9;
+}
+
+.staffTitle {
+  grid-column: span 2 / span 2;
+  grid-row-start: 2;
+}
+
+.staffCount {
+  grid-column: span 5 / span 5;
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+
+.staffCount .ant-input {
+  text-align: center;
+}
+
+.comment {
+  grid-column: span 3 / span 3;
+  grid-row: span 3 / span 3;
+  grid-column-start: 8;
+  grid-row-start: 2;
+  font-weight: 300;
+}
+
+.code {
+  grid-column: span 2 / span 2;
+  grid-row: span 2 / span 2;
+  grid-row-start: 3;
+}
+
+.status {
+  grid-column: span 3 / span 3;
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
+
+.count {
+  grid-column-start: 6;
+  grid-row-start: 3;
+}
+
+.count .ant-input-number .ant-input-number-input {
+  text-align: center;
+}
+
+.markCode {
+  grid-column-start: 7;
+  grid-row-start: 3;
+}
+
+.percentage {
+  grid-column-start: 3;
+  grid-row-start: 4;
+}
+
+.note {
+  grid-column: span 4 / span 4;
+  grid-column-start: 4;
+  grid-row-start: 4;
+}
+
+.note input {
+  color: red;
+}
+
+.countdown__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  width: 40%;
+  opacity: 0;
+}
+
+.countdown__wrapper_visible {
+  opacity: 1;
+}
+
+.ant-input.input__textarea {
+  resize: none;
+}
