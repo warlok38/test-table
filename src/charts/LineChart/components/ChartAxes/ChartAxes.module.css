@@ -1,0 +1,32 @@
+/* Оси */
+.axes line {
+  stroke: var(--color-axis);
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.axisLine {
+  stroke: var(--color-axis);
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+/* Подписи осей */
+.tickLabel {
+  font-size: var(--font-size-xs);
+  fill: var(--color-text-secondary);
+  font-weight: 400;
+}
+
+.axisLabel {
+  font-size: var(--font-size-sm);
+  fill: var(--color-text-primary);
+  font-weight: 500;
+}
+
+/* Контейнеры подписей */
+.yLabels,
+.xLabels {
+  pointer-events: none;
+  user-select: none;
+}

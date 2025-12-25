@@ -1,0 +1,19 @@
+.verticalLineGroup {
+  pointer-events: none;
+}
+
+.verticalLine {
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.intersectionPoint {
+  pointer-events: none;
+  transition: r 0.2s ease;
+  stroke: #fff;
+  stroke-width: 2;
+}
+
+.intersectionPoint:hover {
+  r: calc(var(--space-2) * 0.75);
+}

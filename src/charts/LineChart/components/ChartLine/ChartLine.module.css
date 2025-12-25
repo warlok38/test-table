@@ -1,0 +1,50 @@
+/* Линии графика */
+.line {
+  transition: opacity 0.2s ease;
+  fill: none;
+}
+
+.line:hover {
+  opacity: 0.8;
+}
+
+/* Точки */
+.dot {
+  cursor: pointer;
+  transition: r 0.2s ease;
+  stroke: #fff;
+  stroke-width: 2;
+}
+
+.dot:hover {
+  r: calc(var(--space-2) * 0.75); /* 6px */
+}
+
+/* Значения над точками */
+.valueLabel {
+  font-family: inherit;
+  pointer-events: none;
+  user-select: none;
+  paint-order: stroke;
+  stroke: white;
+  stroke-width: 0.1875rem; /* 3px */
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  font-weight: 500;
+}
+
+/* Медиана */
+.medianLine {
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.medianLabel {
+  pointer-events: none;
+  user-select: none;
+  paint-order: stroke;
+  stroke: white;
+  stroke-width: 0.1875rem; /* 3px */
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}

@@ -1,0 +1,5 @@
+.gridLine {
+  stroke: var(--color-grid);
+  stroke-width: 1;
+  stroke-dasharray: 4 4;
+}
